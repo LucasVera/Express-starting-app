@@ -13,12 +13,12 @@ export function authRequired(req, res, next) {
   try {
     const { authorization } = req.headers;    
     if (!authorization) {
-      unauthorized(res);
+      unauthorized(res, 'Not allowed');
       return;
     }
     const ok = verifyAuthToken(authorization);
     if (!ok) {
-      unauthorized(res);
+      unauthorized(res, 'Not allowed');
       return;
     }
     next();
