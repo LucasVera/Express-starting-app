@@ -6,7 +6,7 @@ This is my own starter app for creating express Apps. It uses some of the latest
 Ecosystem
 ---------
 
-- `ES6+` (Babel)
+- `ES6+` (Babel + async/await)
 - `CORS`
 - `Body Parsing` (body-parser)
 - `Sequelize` as ORM (default db is postgres)
